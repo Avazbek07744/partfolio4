@@ -1,0 +1,116 @@
+.font1 {
+    font-size: 45px;
+}
+
+/* .font2{
+    font-size: 30px;
+    
+} */
+.a {
+    &:hover {
+        background: #fff;
+        border: 1px solid rgb(54, 54, 69);
+        color: rgb(54, 54, 69);
+    }
+}
+
+.b {
+    &:hover {
+        background: #081158;
+        color: #F7744D;
+    }
+}
+
+.container {
+    nav {
+        ul {
+            @media (width <1275px) {
+                display: none;
+            }
+        }
+    }
+}
+
+.container {
+    .cards {
+        @media (width <1190px) {
+            flex-direction: column;
+
+            .card {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+.container {
+    .right {
+        .a {
+            @media (width <500px) {
+                margin-inline-start: 10px;
+            }
+        }
+    }
+}
+
+.container {
+    .cardw {
+        .card {
+            &:hover {
+                background: #081158;
+                color: #fff;
+            }
+        }
+
+        @media (width <800px) {
+            flex-direction: column;
+
+            div {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .cardw {
+        &:hover {
+            .card {
+                span {
+                    h1 {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.container{
+    .cow{
+        @media (width <1275px) {
+            flex-direction: column;
+            .card{
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+.container{
+    section{
+        @media (width <1280px) {
+            flex-direction: column;
+            div{
+                margin-top: 20px;
+            }
+        }
+        div{
+            @media (width <880px) {
+                flex-direction: column;
+                gap: 20px;
+                div{
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
